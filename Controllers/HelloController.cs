@@ -12,20 +12,10 @@ namespace helloweb.Controllers
     {
         // GET api/values
         [HttpGet]
-        public async Task<IEnumerable<string>> Get()
-        { 
-            var result = await  GetExternalResponse();
-            return new string[] {result,"Hello Selly"};
-         }
-        private async Task<string> GetExternalResponse()
+        public IEnumerable<string> Get()
         {
-            var client = new HttpClient();
-            HttpResponseMessage response = await client.GetAsync("http://139.59.248.207:5502/api/rifki/hello");
-            response.EnsureSuccessStatusCode();
-            var result = await response.Content.ReadAsStringAsync();
-            return result;
+            return new string[] { "Hello Selly" };
         }
-
 
         // GET api/values/5
         [HttpGet("{id}")]
