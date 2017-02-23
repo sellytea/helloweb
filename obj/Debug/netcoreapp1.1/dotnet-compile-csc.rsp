@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\Users\Sella\helloweb\obj\Debug\netcoreapp1.1\dotnet-compile.assemblyinfo.cs"
--out:"C:\Users\Sella\helloweb\bin\Debug\netcoreapp1.1\helloweb.dll"
+"D:\Latihan Magang\helloweb\obj\Debug\netcoreapp1.1\dotnet-compile.assemblyinfo.cs"
+-out:"D:\Latihan Magang\helloweb\bin\Debug\netcoreapp1.1\helloweb.dll"
 -r:"C:\Users\Sella\.nuget\packages\Microsoft.AspNetCore.Antiforgery\1.1.0\lib\netstandard1.3\Microsoft.AspNetCore.Antiforgery.dll"
 -r:"C:\Users\Sella\.nuget\packages\Microsoft.AspNetCore.Authorization\1.1.0\lib\netstandard1.3\Microsoft.AspNetCore.Authorization.dll"
 -r:"C:\Users\Sella\.nuget\packages\Microsoft.AspNetCore.Cors\1.1.0\lib\netstandard1.3\Microsoft.AspNetCore.Cors.dll"
@@ -167,7 +167,7 @@
 -r:"C:\Users\Sella\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\Sella\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\Sella\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll"
--resource:"C:\Users\Sella\helloweb\obj\Debug\netcoreapp1.1\hellowebdotnet-compile.deps.json",helloweb.deps.json
-"C:\Users\Sella\helloweb\Program.cs"
-"C:\Users\Sella\helloweb\Startup.cs"
-"C:\Users\Sella\helloweb\Controllers\HelloController.cs"
+-resource:"D:\Latihan Magang\helloweb\obj\Debug\netcoreapp1.1\hellowebdotnet-compile.deps.json",helloweb.deps.json
+"D:\Latihan Magang\helloweb\Program.cs"
+"D:\Latihan Magang\helloweb\Startup.cs"
+"D:\Latihan Magang\helloweb\Controllers\HelloController.cs"

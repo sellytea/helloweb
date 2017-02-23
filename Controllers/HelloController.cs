@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Http;
 
 namespace helloweb.Controllers
 {
@@ -11,10 +12,20 @@ namespace helloweb.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IEnumerable<string>> Get()
+        { 
+            var result = await  GetExternalResponse();
+            return new string[] {result,"Hello Selly"};
+         }
+        private async Task<string> GetExternalResponse()
         {
-            return new string[] { "Hello Selly" };
+            var client = new HttpClient();
+            HttpResponseMessage response = await client.GetAsync("http://139.59.248.207:5502/api/rifki/hello");
+            response.EnsureSuccessStatusCode();
+            var result = await response.Content.ReadAsStringAsync();
+            return result;
         }
+
 
         // GET api/values/5
         [HttpGet("{id}")]
